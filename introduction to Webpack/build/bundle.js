@@ -7,15 +7,26 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/images/download.png":
+/*!*********************************!*\
+  !*** ./src/images/download.png ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + \"download.png\");\n\n//# sourceURL=webpack://webpacklearning/./src/images/download.png?");
+
+/***/ }),
 
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.e(/*! import() */ \"src_index_css\").then(__webpack_require__.bind(__webpack_require__, /*! ./index.css */ \"./src/index.css\"));\r\n\r\n  let root = document.getElementById(\"root\")\r\n\r\n\r\nlet div1 = document.createElement('div');\r\n div1.classList.add(\"red\");\r\n\r\n let inputField = document.createElement('input');\r\n inputField.setAttribute('id', 'inputField');\r\n\r\n let label = document.createElement('label');\r\n label.setAttribute('for', 'inputField');\r\n label.innerText = 'Note: ';\r\n\r\n let button = document.createElement(\"button\");\r\n button.setAttribute(\"class\", \"btn\");\r\n button.innerText = \"submit\"\r\n\r\n let submit = document.createElement('button');\r\n submit.innerText = 'SUBMIT';\r\n\r\n let reset = document.createElement('button');\r\n reset.innerText = 'RESET';\r\n\r\n div1.append(label, inputField , submit, reset);\r\n\r\n\r\n\r\n\r\n\r\n let detailblock = document.createElement('div');\r\n detailblock.setAttribute(\"class\", \"todo_block\");\r\n\r\n submit.addEventListener('click', () => {\r\n     //alert(\"hello\")\r\n     let note = document.getElementById(\"inputField\").value;\r\n     let td1 = document.createElement(\"td\");\r\n     td1.textContent = note;\r\n     detailblock.append(td1);\r\n\r\n         inputField.value = null;\r\n         inputField.focus();\r\n });\r\n\r\n reset.addEventListener('click', () => {\r\n        detailblock.innerHTML = null;\r\n        inputField.value = null;\r\n        inputField.focus();\r\n    });\r\n\r\n root.append(div1, detailblock)\n\n//# sourceURL=webpack://webpacklearning/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_download_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/download.png */ \"./src/images/download.png\");\n__webpack_require__.e(/*! import() */ \"src_index_css\").then(__webpack_require__.bind(__webpack_require__, /*! ./index.css */ \"./src/index.css\"));\r\n\r\n\r\n  let root = document.getElementById(\"root\")\r\n\r\nlet imag = document.createElement(\"img\");\r\nimag.src = _images_download_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\r\n\r\nimag.setAttribute(\"class\", \"image\");\r\n\r\nlet div1 = document.createElement('div');\r\n div1.classList.add(\"red\");\r\n\r\n let inputField = document.createElement('input');\r\n inputField.setAttribute('id', 'inputField');\r\n\r\n let label = document.createElement('label');\r\n label.setAttribute('for', 'inputField');\r\n label.innerText = 'Note: ';\r\n\r\n let button = document.createElement(\"button\");\r\n button.setAttribute(\"class\", \"btn\");\r\n button.innerText = \"submit\"\r\n\r\n let submit = document.createElement('button');\r\n submit.innerText = 'SUBMIT';\r\n\r\n let reset = document.createElement('button');\r\n reset.innerText = 'RESET';\r\n\r\n div1.append(label, inputField , submit, reset);\r\n\r\n\r\n\r\n\r\n\r\n let detailblock = document.createElement('div');\r\n detailblock.setAttribute(\"class\", \"todo_block\");\r\n\r\n submit.addEventListener('click', () => {\r\n     //alert(\"hello\")\r\n     let note = document.getElementById(\"inputField\").value;\r\n     let td1 = document.createElement(\"td\");\r\n     td1.textContent = note;\r\n     detailblock.append(td1);\r\n\r\n         inputField.value = null;\r\n         inputField.focus();\r\n });\r\n\r\n reset.addEventListener('click', () => {\r\n        detailblock.innerHTML = null;\r\n        inputField.value = null;\r\n        inputField.focus();\r\n    });\r\n\r\n root.append(imag, div1, detailblock)\n\n//# sourceURL=webpack://webpacklearning/./src/index.js?");
 
 /***/ })
 

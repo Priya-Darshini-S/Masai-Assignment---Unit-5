@@ -12,6 +12,11 @@
     width: 500px;
     height: 30px;
 }
+.image {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
 
 
 #root {

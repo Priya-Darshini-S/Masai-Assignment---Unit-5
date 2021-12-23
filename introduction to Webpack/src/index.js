@@ -1,7 +1,12 @@
 import("./index.css");
+import image from "./images/download.png";
 
   let root = document.getElementById("root")
 
+let imag = document.createElement("img");
+imag.src = image;
+
+imag.setAttribute("class", "image");
 
 let div1 = document.createElement('div');
  div1.classList.add("red");
@@ -49,4 +54,4 @@ let div1 = document.createElement('div');
         inputField.focus();
     });
 
- root.append(div1, detailblock)
+ root.append(imag, div1, detailblock)
