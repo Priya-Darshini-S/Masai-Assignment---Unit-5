@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-// import Box from '@mui/material/Box';
-// import TextField from '@mui/material/TextField';
-// import Button from '@mui/material/Button';
 
 const GroceryInput = ({ groceries, setGroceries }) => {
     const [item, setItem] = useState('');
