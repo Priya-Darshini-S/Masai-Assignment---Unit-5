@@ -1,0 +1,21 @@
+#cards_details {
+    height:200px;
+    overflow: scroll;
+}
+#cards_details > div{
+    padding-bottom: 5px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.mainList {
+    width: 95%;
+    border: 3px solid black;
+    display: flex;
+    margin: 4px;
+}
+.mainList > div {
+    border: 1px solid maroon;
+}
+.title {
+    width: 55%;
+}

@@ -1,0 +1,9 @@
+#form_details > div {
+display: flex;
+width: 50px;
+padding: 5px;
+margin: 10px;
+}
+label {
+    text-align: left;
+}

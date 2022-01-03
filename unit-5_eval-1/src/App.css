@@ -1,0 +1,17 @@
+#app {
+  width: 80%;
+  background-color: burlywood;
+  margin: auto;
+  padding: 20px;
+}
+#app {
+  display: flex;
+  gap: 30%;
+}
+#form, #cards {
+  width: 40%;
+  border: 1px solid black;
+}
+.heading {
+  text-align: center;
+}
