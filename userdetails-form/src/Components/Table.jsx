@@ -4,9 +4,21 @@ import { TableItem } from "./TableItem";
 
 export const Table = () => {
     const [user, setUser] = useState([]);
+     
+    useEffect(() => {
+        getUsers();
+    }, []);
+
+    const getUsers = () => {
+        fetch("http://localhost:3002/users")
+        .then((d) => d.json())
+        .then((res) => {
+            setUser(res);
+        });
+    }
 
     const handleData = (data) => {
-        //console.log(data);
+        console.log("data", data);
         let martialStatus = "";
         if(data.married){
             martialStatus = "married";
@@ -24,8 +36,19 @@ export const Table = () => {
             martialStatus: martialStatus,
             profilePhoto: data.file[0].name,
         }
-    }
+        fetch("http://localhost:3002/users", {
+            method: "POST",
+            body: JSON.stringify(userData),
+            headers: {
+                "content-type": "application/json",
+            }
+        }) .then(() => {
+            getUsers();
+        });
+        console.log("userData", userData)
 
+    }
+   
 
     return (
         <div>

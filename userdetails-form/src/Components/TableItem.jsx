@@ -1,6 +1,6 @@
 
 
-export const TableItem = ({username, age, address, salary, martialStatus, department, files, deleteUser }) => {
+export const TableItem = ({username, age, address, salary, martialStatus, department, files }) => {
     return (
         <div className="mainList">
             <table>
@@ -14,9 +14,7 @@ export const TableItem = ({username, age, address, salary, martialStatus, depart
                         <td>{salary}</td>
                         <td>{martialStatus}</td>
                         
-                        <td>
-                            <button>Delete</button>
-                        </td>
+                       
                     </tr>
                 </tbody>
             </table>

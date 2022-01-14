@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import "./Form.css";
 
 export const Form = ({ getData, filterData, showAll }) => {
-    const [form, setForm] = useState({
+    const [formDet, setForm] = useState({
         username: "",
         age: "",
         address: "",
@@ -17,16 +17,16 @@ export const Form = ({ getData, filterData, showAll }) => {
         let {name, value, checked, type, files} = e.target;
         value = type === "checkbox" ? checked : value;
         setForm({
-            ...form, 
+            ...formDet, 
             [name]: value,
             files,
         });
     };
     const handleSubmit = (e) => {
         e.preventDefault();
-        //console.log(form);
+        //console.log(formDet);
         // console.log(getData);
-        getData(form);
+        getData(formDet);
     };
     
     const handFilter = (e) => {
@@ -43,7 +43,7 @@ export const Form = ({ getData, filterData, showAll }) => {
         showAll();
     };
 
-    const {department, Married, Single} = form;
+    const {department, Married, Single} = formDet;
 
     // console.log(form);
     return(
@@ -98,3 +98,4 @@ export const Form = ({ getData, filterData, showAll }) => {
         
     );
 }
+
