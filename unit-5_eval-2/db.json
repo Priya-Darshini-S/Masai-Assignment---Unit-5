@@ -1,0 +1,31 @@
+{
+  "job_details": [
+    {
+      "name": "sfdfgfd",
+      "title": "sddsds",
+      "location": "sdsdsd",
+      "salary": "43434",
+      "description": "dsdsd",
+      "job_type": "dsds",
+      "id": "tdj"
+    },
+    {
+      "name": "Masai",
+      "title": "instructor",
+      "location": "bangalore",
+      "salary": "50000k",
+      "description": "teaching",
+      "job_type": "wfh",
+      "id": "E0Y"
+    },
+    {
+      "name": "xyz",
+      "title": "full stack developer",
+      "location": "mumbai",
+      "salary": "98888",
+      "description": "developing",
+      "job_type": "wfh",
+      "id": "H7r"
+    }
+  ]
+}
