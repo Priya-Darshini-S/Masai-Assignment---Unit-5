@@ -1,0 +1,30 @@
+.input_box {
+    margin : 50px;
+    margin-bottom: 2px;
+}
+input {
+    width: 200px;
+    padding: 5px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+button {
+    border: 3px solid black;
+    background-color: teal;
+    border-radius: 6px;
+    width: 100px;
+    padding: 5px;
+
+}
+.todos {
+    width: 30%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+.todos > button {
+    border: 1px solid green;
+}
