@@ -1,8 +1,5 @@
 import { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import TodoInput from "./components/TodoInput";
-import TodoList from "./components/TodoList";
 import { AllRoutes } from "./Routes/AllRoutes";
 
 function App() {
